@@ -1,6 +1,6 @@
 const { OpenAIClient, AzureKeyCredential } = require("@azure/openai");
-const endpoint =  "https://instanciachatgpt.openai.azure.com/";  // process.env["AZURE_OPENAI_ENDPOINT"] ;
-const azureApiKey = "2993309da8914082b131e6a42b25219c"; //process.env["AZURE_OPENAI_KEY"] ;
+const endpoint =  process.env["AZURE_OPENAI_ENDPOINT"] ;
+const azureApiKey = process.env["AZURE_OPENAI_KEY"] ;
 
 console.log(endpoint);
 
