@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Asesor Azure OpenAI</title>
+    <link rel="stylesheet" href="assets/css/chatbot.css">
+    <link rel="shortcut icon" href="assets/images/icono_robot_50x50.webp" type="image/x-icon">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <img class="image-container" src="assets/images/icono_robot_50x50.webp" alt="bot icon">
+            <h2 class="chatbot-name">
+                Asesor Azure OpenAI
+            </h2>            
+        </div>
+        <div class="chatlog" id="chat-log">
+            <div class="message received">
+                <p id="welcome-message">Bienvenido al Asesor Azure OpenAI</p>
+            </div>
+            
+        </div>
+        <div class="chat-input">
+            <input type="text" class="user-input" placeholder="Escriba una pregunta">
+            <button id="send-button">Enviar</button>
+            <!-- <button id="clear-button">Limpiar</button> -->
+        </div>
+    </div>
+    <div class="loading-indicator">
+        <div class="loading-spinner"></div>
+    </div>
+    <!-- <script src="assets/js/chatbot.js"></script> -->
+    <script src="assets/scripts/azureopenai.js"></script>
+    <!-- <script data-azureopenai="assets/script/azureopenai" src="assets/scripts/require.js"></script> -->
+</body>
+</html>
